@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 /*
 	Stellar by HTML5 UP
 	html5up.net | @ajlkn
