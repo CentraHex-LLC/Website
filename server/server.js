@@ -9,4 +9,4 @@ server.get('/api/v1/ping', (request, response, next) => {
     response.send("NUTS")
 })
 
-server.listen(8080);
+server.listen(process.env.PORT ?? 8080);
