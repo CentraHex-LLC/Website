@@ -1,5 +1,21 @@
-.p {
-  size: 5;
+.notfound-wrapper {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.notfound-container {
+  padding: 2em;
+}
+
+.logo-custom {
+  border-radius: 0.5em;
+  background-color: white;
+}
+
+#header {
+  justify-content: center;
+  align-items: center;
 }
 
 /*# sourceMappingURL=App.css.map */

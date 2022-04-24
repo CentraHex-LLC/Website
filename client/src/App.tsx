@@ -1,28 +1,17 @@
 import React from 'react';
-import Footer from 'Footer';
-import Tools from 'Tools';
-import WorkRequests from 'WorkRequests';
-import AboutUs from 'AboutUs';
-import Services from 'Services';
-import Navbar from 'Navbar';
-import Header from 'Header';
+import LandingPage from 'LandingPage';
+import NotFoundPage from 'NotFoundPage';
 import 'style/App.css';
 import 'style/main.css';
+import { Route, Routes } from 'react-router-dom';
 
 function App() {
   return (
-    <div className="App is-preload">
-      <div id="wrapper">
-        <Header/>
-        <Navbar/>
-        <div id="main">
-          <AboutUs/>
-          <Services/>
-          <Tools/>
-          <WorkRequests/>
-        </div>
-        <Footer/>
-      </div>
+    <div className='App is-preload'>
+      <Routes>
+        <Route path='/' element={<LandingPage/>}/>
+        <Route path='*' element={<NotFoundPage/>}/>
+      </Routes>
     </div>
   );
 }
