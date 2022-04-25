@@ -9,11 +9,40 @@
 }
 
 .logo-custom {
+  width: 40em;
   border-radius: 0.5em;
-  background-color: white;
+  background-color: rgba($color: #ffffff, $alpha: 0.93);
+  position: absolute;
 }
 
 #header {
-  justify-content: center;
+  display: flex; 
   align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.header-custom {
+  margin-top: 10vh;
+  position: relative;
+  height: 35vh;
+}
+
+#main {
+  border-radius: 0 0 0.5em 0.5em !important;
+
+}
+
+.custom-image {
+  position: absolute;
+  border-radius: 0.5em 0.5em 0 0;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  object-fit: cover;
 }
